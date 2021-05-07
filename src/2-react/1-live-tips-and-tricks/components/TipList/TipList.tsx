@@ -1,11 +1,13 @@
 /* Data */
 import tips from '../../mock-data/tips.json';
+import {TipsType} from '../../types';
+
 
 /* Instruments */
 import { formatDate, getTagIcon } from '../../helpers';
 
 export const TipList: React.FC = () => {
-    const tipsJSX = tips?.map((tip) => {
+    const tipsJSX = tips?.map((tip:TipsType) => {
         const TagIcon = getTagIcon(tip.tag.name);
 
         return (
