@@ -1,7 +1,15 @@
+import { Filter } from './components/Filter'
+import { Header } from './components/Head'
+import { CurrentWeather } from './components/CurrentWeather'
+import { Days } from './components/Days'
+
 export const App = () => {
     return (
         <main>
-            <h1>Приложение «Погода»</h1>
+            <Filter/>
+            <Header/>
+            <CurrentWeather/>
+            <Days/>
         </main>
     );
 };
